@@ -1,0 +1,177 @@
+<html> 
+<head>
+    <title> REGISTRATION FORM</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        function fun(){
+            var FirstName =document.frm.txt1.value;
+            if(FirstName=="")
+            alert("name should be not emty");
+            var mobileNo =document.frm.txt2.value;
+            if(mobileNo.length<10)
+            alert("mobileno should 10 digits");
+            var Email=document.frm.txt3.value;
+            if(!Email.includes("@"))
+            alert("should contain @ symbol");
+            var password =document.frm.txt4.value;
+            if(password.length<8)
+            alert("password should be minimum 8 digits");
+        }
+    </script>
+</head>
+<body> 
+      
+    <form name="frm">
+        <h1>REGISTRATION FORM</h1>
+        FirstName:<input type="text"name="txt1"value=""><br><br>
+        Last Name:<input type="text"name="txt"value=""><br><br>
+        Gender: 
+        male<input type="radio"value="male">
+        female<input type="radio"value="female">
+        other<input type="radio"value="other"><br><br>
+        mobileNo:<input type="text"name="txt2"value=""><br><br>
+        Email:<input type="text"name="txt3"value=""><br><br>
+        password:<input type="text"name="txt4"value=""><br><br>
+        Address:<input type="text"name="txt"value=""><br><br>
+        City:
+        <select>
+            <option>Delhi</option>
+        </select><br><br>
+        Stat:
+        <select>
+            <option>Telangana</option>
+            <option>AP</option>
+            <option>MP</option>
+            <option>TL</option>
+        </select><br><br>
+        Select Course:
+        <select>
+            <option>CSE</option>
+            <option>MECH</option>
+            <option>CIVIL</option>
+        </select><br><br>
+        <input type="submit"name="sub"value="SUBMIT"
+        onclick="fun()">
+    </form>
+</body>
+ </html>
+/////
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 0 auto;/////
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 0 auto;
+}
+
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+
+label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+
+input[type="text"], select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+}
+
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+
+label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+
+input[type="text"], select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
